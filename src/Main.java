@@ -20,7 +20,7 @@ public class Main {
         int temperature = console.nextInt();
         System.out.println("Задача 2");
         System.out.println("-----------------------");
-        if (temperature < 5) {
+        if (temperature <= 5) {
             System.out.println("На улице холодно, нужно надеть шапку");
         } else if (temperature > 5) {
             System.out.println("Сегодня тепло, можно идти без шапки");
@@ -33,7 +33,7 @@ public class Main {
         System.out.print("Введите скорость вашего автомобиля: ");
         int speed = console.nextInt();
         System.out.print("Если скорость " + speed);
-        if (speed < 60) {
+        if (speed <= 60) {
             System.out.println(" то можно ездить спокойно");
         } else if (speed > 60) {
             System.out.println(" то придется заплатить штраф");
@@ -45,9 +45,9 @@ public class Main {
         System.out.print("Введите ваш возраст для определения, куда вам нужно ходить: ");
         int ageEduInput = console.nextInt();
         System.out.print("Если возраст человека равен " + ageEduInput);
-        if (ageEduInput > 2 && ageEduInput < 6) {
+        if (ageEduInput >= 2 && ageEduInput <= 6) {
             System.out.println(" то ему нужно ходить в детский сад.");
-        } else if (ageEduInput > 7 && ageEduInput < 17) {
+        } else if (ageEduInput >= 7 && ageEduInput < 17) {
             System.out.println(" то ему нужно ходить в школу.");
         } else if (ageEduInput >= 18 && ageEduInput <= 24) {
             System.out.println(" то его место в университете");
@@ -61,9 +61,9 @@ public class Main {
         System.out.print("Введите ваш возраст для определения возможности кататься на аттракционе: ");
         int ageToDrive = console.nextInt();
         System.out.print("Если возраст ребенка равен " + ageToDrive);
-        if (ageToDrive < 5) {
+        if (ageToDrive <= 5) {
             System.out.println(" то ему нельзя кататься на аттракционе");
-        } else if (ageToDrive > 5 && ageToDrive < 14) {
+        } else if (ageToDrive > 5 && ageToDrive <= 14) {
             System.out.println(" то ему можно кататься на аттракционе в сопровождении взрослого");
         } else if ( ageToDrive > 14 ) {
             System.out.println(" то ему можно кататься на аттракционе без сопровождения взрослого");
